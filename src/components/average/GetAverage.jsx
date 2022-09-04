@@ -2,7 +2,7 @@ import React from "react";
 import useSWR from "swr";
 
 function GetAverage() {
-  let { data } = useSWR("http://localhost:3001/average");
+  let { data } = useSWR("https://dolar-blue-app.herokuapp.com/average");
 
   return (
     <>

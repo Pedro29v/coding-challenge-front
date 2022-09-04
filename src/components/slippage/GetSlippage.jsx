@@ -2,7 +2,7 @@ import React from "react";
 import useSWR from "swr";
 
 function GetSlippage() {
-  let { data } = useSWR("http://localhost:3001/slippage");
+  let { data } = useSWR("https://dolar-blue-app.herokuapp.com/slippage");
   return (
     <>
       {data.map((e, i) => {
