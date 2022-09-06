@@ -14,7 +14,13 @@ function GetSlippage() {
             <div className="text-md lg:flex lg:justify-around">
               <div>
                 <p className="text-md">Slippage-Compra: </p>
-                <p>{e.buy_price_slippage}%</p>
+                {e.buy_price_slippage > 0 ? (
+                  <p className="text-green-700 ">{e.buy_price_slippage}%</p>
+                ) : e.buy_price_slippage < 0 ? (
+                  <p className="text-red-600 ">{e.buy_price_slippage}%</p>
+                ) : (
+                  <p className="text-white">{e.buy_price_slippage}%</p>
+                )}
               </div>
               <div>
                 <p className="text-md">Slippage-venta:</p>
