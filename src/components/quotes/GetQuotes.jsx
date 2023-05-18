@@ -2,7 +2,7 @@ import React from "react";
 import useSWR from "swr";
 
 function GetQuotes() {
-  let { data } = useSWR("https://dolar-blue-app.herokuapp.com/quotes");
+  let { data } = useSWR("https://coding-challenge-back-production.up.railway.app/quotes");
   const date = new Date();
   const day = date.getDate();
   const month = date.getMonth() + 1;
