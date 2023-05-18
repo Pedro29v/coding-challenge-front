@@ -2,7 +2,7 @@ import React from "react";
 import useSWR from "swr";
 
 function GetSlippage() {
-  let { data } = useSWR("https://dolar-blue-app.herokuapp.com/slippage");
+  let { data } = useSWR("https://coding-challenge-back-production.up.railway.app/slippage");
   return (
     <>
       {data.map((e, i) => {
